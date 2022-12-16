@@ -1,5 +1,5 @@
-# SKATER
-# This is a school Assignment 
+# https://skatercustom.netlify.app/
+
 ```
-https://skatercustom.netlify.app/
+This is a school Assignment 
 ```
