@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/services.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -94,7 +97,7 @@
     <!-- services start -->
     <section id="service">
         <section class="container">
-            <div class="service_header">
+            <div class="service_header" data-aos="fade-up">
                 <h1>SERVICES</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at
@@ -109,14 +112,14 @@
 
     <!-- best start -->
     <section class="best">
-        <div class="best_left">
+        <div class="best_left" data-aos="fade-right" data-aos-delay="600">
             <img src="./image/samuel-horn.jpg" alt="samuel" />
         </div>
-        <div class="best_right">
+        <div class="best_right" data-aos="fade-left" data-aos-delay="600">
             <section>
                 <h1>MY BEST PERFORMANCE</h1>
                 <article>
-                    <div class="text1">
+                    <div class="text1" >
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Ducimus id dignissimos nemo minus perspiciatis ullam itaque
@@ -129,7 +132,7 @@
                             esse, iusto?
                         </p>
                     </div>
-                    <div class="text2">
+                    <div class="text2" >
                         <p>
                             <span>
                                 <img src="./image/check.png" alt="check" />
@@ -161,10 +164,10 @@
     </section>
 
     <section class="best">
-        <div class="best_left" id="best_change_right">
+        <div class="best_left" id="best_change_right" data-aos="fade-left" data-aos-delay="600">
             <img src="./image/v2osk.jpg" alt="samuel" />
         </div>
-        <div class="best_right" id="best_change_left">
+        <div class="best_right" id="best_change_left" data-aos="fade-right" data-aos-delay="600">
             <section>
                 <h1>MY BEST MENTOR</h1>
                 <article>
@@ -259,9 +262,14 @@
     <!-- bootstrap js -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- js -->
     <script src="./js/home.js"></script>
     <script>
+        AOS.init();
+
         window.document.getElementById(
             "carousel_h1"
         ).innerHTML = `Hi I'm John and I Skate a lot`;

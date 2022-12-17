@@ -69,6 +69,7 @@
   flex-direction: row;
   gap: 30px;
   margin-top: 50px;
+  overflow-y: hidden;
 }
 
 .team > .team_group > div {

@@ -22,7 +22,7 @@ const teams = [
 
 teams.forEach((i) => {
     document.getElementById("team_group").innerHTML += `
-    <div>
+    <div data-aos="fade-up">
         <section>
             <img src="${i.img}" alt="profile1">
             <h1>${i.h1}</h1>

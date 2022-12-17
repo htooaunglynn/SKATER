@@ -1,3 +1,5 @@
+let delay = 200;
+
 const services = [
     {
         img: "../image/skate-board.png",
@@ -34,7 +36,7 @@ const services = [
 for (let i = 0; i < services.length; i++) {
     document.getElementById("service_box").innerHTML += `
         <div class="ser_item">
-            <div class="ser_cont">
+            <div class="ser_cont" data-aos="fade-up" data-aos-delay="${delay * i}">
                 <img src="${services[i].img}" alt="stake">
                 <h2>${services[i].h2}</h2>
                 <p>${services[i].p}</p>

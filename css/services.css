@@ -34,6 +34,7 @@
 .service_box > .ser_item {
   flex: 1 1 20rem;
   height: fit-content;
+  overflow-y: hidden;
 }
 
 .ser_item > .ser_cont {
